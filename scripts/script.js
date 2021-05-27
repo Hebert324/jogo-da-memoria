@@ -1,7 +1,7 @@
 const FRONT = "card_font"
 const BACK = "card_back"
 
-let apps = [
+let techs = [
     'bootstrap',
     'css',
     'electron',
