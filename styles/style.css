@@ -8,6 +8,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
 /*cartas----------------------------*/
@@ -71,6 +73,8 @@ body{
 
 /*board-------------------------*/
 #gameBoard{
-    background-color: tomato;
     max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
