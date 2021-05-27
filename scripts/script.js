@@ -13,3 +13,10 @@ let techs = [
     'node',
     'react'
 ]
+function creatCardsTech(techs){
+    let cards = []
+
+    for(let tech of techs){
+        cards.push(creatPairFromTech)
+    }
+}
