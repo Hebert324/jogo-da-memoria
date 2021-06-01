@@ -5,9 +5,10 @@
 }
 body{
     font-family: 'Righteous', sans-serif;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: #f0f0f0;
 }
