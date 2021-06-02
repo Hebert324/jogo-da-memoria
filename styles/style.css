@@ -79,3 +79,19 @@ body{
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
+/*Resultados*/
+#result{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+#totalResult{
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+/*Rodapé*/
+footer {
+    font-size: 17px;
+    margin-top: 30px;
+}
