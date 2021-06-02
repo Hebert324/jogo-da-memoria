@@ -1,4 +1,50 @@
 let game = {
+
+    lockMode: false,
+    firstCard: null,
+    secondCard: null,
+
+    setCard: function(id){
+        let card = this.cards.filter(card => card.id === id)[0]
+        console.log(card)
+
+        if(card.flipped || this.lockMode){
+            return false
+        }
+
+        if(!this.firstCard){
+            this.firstCard = card
+            this.firstCard.flipped = true
+            return true
+        }
+
+        else{
+            this.secondCard = card
+            this.lockMode = true
+            this.secondCard.flipped = true
+            return true
+        }
+    },
+
+    checkMatch: function(){
+        if(!this.firstCard || !this.secondCard){
+            return false
+        }
+        return this.firstCard.icon == this.secondCard.icon
+    },
+
+    clearCards: function(){
+        this.firstCard = null
+        this.secondCard = null
+        this.lockMode = false
+    },
+
+    unflipCards(){
+        this.firstCard.flipped = false
+        this.secondCard.flipped = false
+        this.clearCards()
+    },
+
     techs: [
         'bootstrap',
         'css',
@@ -50,7 +96,7 @@ let game = {
     //aqui fazemos a função para embaralhar as cartas
     shuffleCards: function(cards){
     //primeiro criamos uma variavel que vai pegar o legnth das cartas
-    let currentIndex = this.this.cards.length
+    let currentIndex = this.cards.length
     //e fazemos outra variavel que vai gerar um numero aleatorio, começando do 0
     let randomIndex = 0
 
