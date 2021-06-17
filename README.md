@@ -1,4 +1,4 @@
-# Jogo da memória🎲
+<h1 align="center"> Jogo da memória🎲 </h1>
  
 ### Nesse Projeto desenvolvemos um jogo da memória muito legal aonde ele mostra quantas tentativas você fez e no final mostra o total de movimentos que você fez partida ganhar a partida anterior.
 
